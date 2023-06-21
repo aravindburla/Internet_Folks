@@ -37,11 +37,6 @@ app.use('/member/',memberRouter)
 
 const router = express.Router();
 
-
-
-app.get("/", (req, res) => {
-    res.status(200).json({ msg: "CampMonk's Homepage" });
-});
 console.log('c')
 
 app.listen(process.env.API_SERVICE_PORT || 3000, () => {
